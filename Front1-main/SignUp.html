@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/SignUp.css">
+    <title>Career Orientation PTIT</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Career Orientation PTIT</h1>
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li class="header__nav__item"><a href="#" class="header__nav__link">Đăng nhập</a></li>
+                    <li class="header__nav__item"><a href="#" class="header__nav__link">Đăng ký</a></li>
+                    <li class="header__nav__item"><a href="#" class="header__nav__link">Bài khảo sát</a></li>
+                    <li class="header__nav__item"><a href="#" class="header__nav__link">Kết quả đã khảo sát</a></li>
+                    <li class="header__nav__item"><a href="#" class="header__nav__link">Thông tin học bổng</a></li>
+                    <li class="header__nav__item"><a href="#" class="header__nav__link">Khóa học</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="register-form">
+        <div class="register-form__logo">
+            <img src="/Asset/image/fb_icon_325x325.png" alt="Facebook Logo" onclick="redirectToFacebook()">
+            <img src="/Asset/image/GG.png" alt="Google Logo" onclick="redirectToGoogle()">
+        </div>
+        
+        <h2 class="register-form__title">Đăng ký tài khoản</h2>
+        
+        <form>
+            <label for="fullname" class="register-form__label">Họ và tên:</label>
+            <input type="text" id="fullname" name="fullname" class="register-form__input" required>
+
+            <label for="phone" class="register-form__label">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" class="register-form__input" required>
+
+            <label for="email" class="register-form__label">Email:</label>
+            <input type="email" id="email" name="email" class="register-form__input" required>
+
+            <label for="address" class="register-form__label">Địa chỉ:</label>
+            <input type="text" id="address" name="address" class="register-form__input" required>
+
+            <label for="username" class="register-form__label">Tên đăng nhập:</label>
+            <input type="text" id="username" name="username" class="register-form__input" required>
+
+            <label for="password" class="register-form__label">Mật khẩu:</label>
+            <input type="password" id="password" name="password" class="register-form__input" required>
+
+            <label for="confirm-password" class="register-form__label">Xác nhận mật khẩu:</label>
+            <input type="password" id="confirm-password" name="confirm-password" class="register-form__input" required>
+
+            <div class="register-form__checkbox">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">Tôi đồng ý với điều khoản</label>
+            </div>
+
+            <button type="submit" class="register-form__button">Đăng ký</button>
+        </form>
+    </div>
+
+    <script>
+        function redirectToFacebook() {
+            // Add logic to redirect to Facebook login page
+            alert("Redirecting to Facebook...");
+        }
+
+        function redirectToGoogle() {
+            // Add logic to redirect to Google login page
+            alert("Redirecting to Google...");
+        }
+    </script>
+
+</body>
+</html>
